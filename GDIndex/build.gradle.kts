@@ -5,7 +5,7 @@ cloudstream {
     language = "en"
     // All of these properties are optional, you can safely remove them
 
-//    description = "沙克兹"
+     description = "沙克兹"
     authors = listOf("Horis")
 
     /**
