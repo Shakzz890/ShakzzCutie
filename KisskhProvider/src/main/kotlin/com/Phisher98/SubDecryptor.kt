@@ -1,4 +1,4 @@
-package com.phisher98
+package com.megix
 
 import com.lagradost.cloudstream3.base64DecodeArray
 import javax.crypto.Cipher
