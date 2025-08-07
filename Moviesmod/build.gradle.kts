@@ -22,5 +22,5 @@ cloudstream {
         "Anime"
     )
 
-    iconUrl = "https://github.com/Shakzz890/ShakzzCutie/masters/Moviesmod/icon.png"
+    iconUrl = "https://github.com/Shakzz890/ShakzzCutie/blob/masters/Moviesmod/icon.png"
 }
