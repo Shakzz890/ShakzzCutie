@@ -1,8 +1,8 @@
 [
   {
-    "iconUrl": "https://github.com/Shakzz890/cutie/raw/refs/heads/master/GDIndex/icon.ico",
+    "iconUrl": "https://github.com/Shakzz890/ShakzzCutie/heads/master/GDIndex/icon.ico",
     "apiVersion": 1,
-    "repositoryUrl": "https://github.com/Shakzz890/cutie",
+    "repositoryUrl": "https://github.com/Shakzz890/ShakzzCutie",
     "fileSize": 15937,
     "status": 1,
     "language": "en",
@@ -15,13 +15,13 @@
     ],
     "version": 4,
     "internalName": "GDIndex",
-    "url": "https://raw.githubusercontent.com/Shakzz890/cutie/builds/GDIndex.cs3",
+    "url": "https://raw.githubusercontent.com/Shakzz890/ShakzzCutie/builds/GDIndex.cs3",
     "name": "GDIndex"
   },
   {
-    "iconUrl": "https://github.com/Shakzz890/cutie/raw/refs/heads/master/MoviesDrive/icon.png",
+    "iconUrl": "https://github.com/Shakzz890/ShakzzCutie/heads/master/MoviesDrive/icon.png",
     "apiVersion": 1,
-    "repositoryUrl": "https://github.com/Shakzz890/cutie",
+    "repositoryUrl": "https://github.com/Shakzz890/ShakzzCutie",
     "fileSize": 25075,
     "status": 1,
     "language": "hi",
@@ -37,13 +37,13 @@
     "version": 22,
     "internalName": "MoviesDrive",
     "description": "High Quality Movies and TV Shows",
-    "url": "https://raw.githubusercontent.com/Shakzz890/cutie/builds/MoviesDrive.cs3",
+    "url": "https://raw.githubusercontent.com/Shakzz890/ShakzzCutie/builds/MoviesDrive.cs3",
     "name": "MoviesDrive"
   },
   {
-    "iconUrl": "https://github.com/Shakzz890/cutie/raw/refs/heads/master/Moviesmod/icon.png",
+    "iconUrl": "https://github.com/Shakzz890/ShakzzCutie/heads/master/Moviesmod/icon.png",
     "apiVersion": 1,
-    "repositoryUrl": "https://github.com/Shakzz890/cutie",
+    "repositoryUrl": "https://github.com/Shakzz890/ShakzzCutie",
     "fileSize": 28569,
     "status": 1,
     "authors": [
@@ -58,13 +58,13 @@
     "version": 27,
     "internalName": "Moviesmod",
     "description": "Includes Topmovies",
-    "url": "https://raw.githubusercontent.com/Shakzz890/cutie/builds/Moviesmod.cs3",
+    "url": "https://raw.githubusercontent.com/Shakzz890/ShakzzCutie/builds/Moviesmod.cs3",
     "name": "Moviesmod"
   },
   {
-    "iconUrl": "https://github.com/Shakzz890/cutie/raw/refs/heads/master/NetflixMirrorProvider/icon.png",
+    "iconUrl": "https://github.com/Shakzz890/ShakzzCutie/raw/master/NetflixMirrorProvider/icon.png",
     "apiVersion": 1,
-    "repositoryUrl": "https://github.com/Shakzz890/cutie",
+    "repositoryUrl": "https://github.com/Shakzz890/ShakzzCutie",
     "fileSize": 45121,
     "status": 1,
     "authors": [
@@ -79,7 +79,7 @@
     "version": 29,
     "internalName": "NetflixMirrorProvider",
     "description": "Netflix, PrimeVideo, JioHotstar(Hotstar, Disney, Paramount, HBO, Peacock) Content in Multiple Languages",
-    "url": "https://raw.githubusercontent.com/Shakzz890/cutie/builds/NetflixMirrorProvider.cs3",
+    "url": "https://raw.githubusercontent.com/Shakzz890/ShakzzCutie/builds/NetflixMirrorProvider.cs3",
     "name": "NetflixMirrorProvider"
   }
 ]
