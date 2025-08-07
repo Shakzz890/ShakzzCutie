@@ -19,35 +19,13 @@
     "name": "GDIndex"
   },
   {
-    "iconUrl": "https://github.com/Shakzz890/ShakzzCutie/blob/masters/MoviesDrive/icon.png",
-    "apiVersion": 1,
-    "repositoryUrl": "https://github.com/Shakzz890/ShakzzCutie",
-    "fileSize": 25075,
-    "status": 1,
-    "language": "hi",
-    "authors": [
-      "megix"
-    ],
-    "tvTypes": [
-      "TvSeries",
-      "Movie",
-      "AsianDrama",
-      "Anime"
-    ],
-    "version": 22,
-    "internalName": "MoviesDrive",
-    "description": "High Quality Movies and TV Shows",
-    "url": "https://raw.githubusercontent.com/Shakzz890/ShakzzCutie/builds/MoviesDrive.cs3",
-    "name": "MoviesDrive"
-  },
-  {
     "iconUrl": "https://github.com/Shakzz890/ShakzzCutie/blob/masters/Moviesmod/icon.png",
     "apiVersion": 1,
     "repositoryUrl": "https://github.com/Shakzz890/ShakzzCutie",
     "fileSize": 28569,
     "status": 1,
     "authors": [
-      "megix"
+      "shakzz"
     ],
     "tvTypes": [
       "TvSeries",
@@ -68,7 +46,7 @@
     "fileSize": 45121,
     "status": 1,
     "authors": [
-      "megix"
+      "shakzz"
     ],
     "tvTypes": [
       "Movie",
