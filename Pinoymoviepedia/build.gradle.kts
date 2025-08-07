@@ -1,7 +1,7 @@
 version = 2
 
 cloudstream {
-    authors     = listOf("megix")
+    authors     = listOf("Shakzz")
     language    = "fil"
     description = "Contains Bluray7"
 
