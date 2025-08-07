@@ -27,7 +27,7 @@
         "status": 1,
         "language": "en",
         "authors": [
-            "shakzz,Hexated,Peerless"
+            "Shakzz,Hexated,Peerless"
         ],
         "tvTypes": [
             "AsianDrama",
@@ -38,6 +38,7 @@
         "version": 11,
         "internalName": "KisskhProvider",
         "jarUrl": "https://raw.githubusercontent.com/Shakzz890/ShakzzCutie/builds/KisskhProvider.jar",
+        "description": "KDrama, CDrama. Anime, TVSeries",
         "url": "https://raw.githubusercontent.com/Shakzz890/ShakzzCutie/builds/KisskhProvider.cs3",
         "name": "KisskhProvider"
     },
@@ -50,7 +51,7 @@
         "status": 1,
         "language": "fil",
         "authors": [
-            "shakzz"
+            "Shakzz"
         ],
         "tvTypes": [
             "Movie",
@@ -72,7 +73,7 @@
         "status": 1,
         "language": "en",
         "authors": [
-            "shakzz"
+            "Shakzz"
         ],
         "tvTypes": [
             "AnimeMovie",
@@ -95,7 +96,7 @@
         "status": 1,
         "language": "en",
         "authors": [
-            "shakzz"
+            "Shakzz"
         ],
         "tvTypes": [
             "Movie",
@@ -110,34 +111,13 @@
         "name": "Animez"
     },
   {
-    "iconUrl": "https://github.com/Shakzz890/ShakzzCutie/blob/masters/Moviesmod/icon.png",
-    "apiVersion": 1,
-    "repositoryUrl": "https://github.com/Shakzz890/ShakzzCutie",
-    "fileSize": 28569,
-    "status": 1,
-    "authors": [
-      "shakzz"
-    ],
-    "tvTypes": [
-      "TvSeries",
-      "Movie",
-      "AsianDrama",
-      "Anime"
-    ],
-    "version": 27,
-    "internalName": "Moviesmod",
-    "description": "Includes Topmovies",
-    "url": "https://raw.githubusercontent.com/Shakzz890/ShakzzCutie/builds/Moviesmod.cs3",
-    "name": "Moviesmod"
-  },
-  {
     "iconUrl": "https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/15844974/netflixlogo.0.0.1466448626.png?quality=90&strip=all&crop=1.2535702951444%2C0%2C97.492859409711%2C100&w=2400",
     "apiVersion": 1,
     "repositoryUrl": "https://github.com/Shakzz890/ShakzzCutie",
     "fileSize": 45121,
     "status": 1,
     "authors": [
-      "shakzz"
+      "Shakzz"
     ],
     "tvTypes": [
       "Movie",
