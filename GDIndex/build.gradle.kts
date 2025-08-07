@@ -5,7 +5,7 @@ cloudstream {
     language = "en"
     // All of these properties are optional, you can safely remove them
 
-//    description = "Lorem Ipsum"
+//    description = "沙克兹"
     authors = listOf("Horis")
 
     /**
@@ -21,6 +21,6 @@ cloudstream {
         "TvSeries",
     )
 
-    iconUrl = "https://github.com/Shakzz890/ShakzzCutie/raw/refs/heads/master/GDIndex/icon.ico"
+    iconUrl = "https://raw.githubusercontent.com/Shakzz890/ShakzzCutie/masters/GDIndex/icon.ico"
 
 }
