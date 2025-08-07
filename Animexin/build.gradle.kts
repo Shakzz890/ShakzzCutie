@@ -7,7 +7,7 @@ cloudstream {
 
     description = "Anime and Movies"
     language    = "en"
-    authors = listOf("Phisher98")
+    authors = listOf("shakzz")
 
     /**
     * Status int as the following:
