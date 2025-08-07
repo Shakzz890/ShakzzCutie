@@ -1,0 +1,8 @@
+{
+  "name": "Shakzz Repo(English & Filipino)",
+  "description": "English & Filipino",
+  "manifestVersion": 1,
+  "pluginLists": [
+    "https://raw.githubusercontent.com/Shakzz890/ShakzzCutie/builds/plugins.json"
+  ]
+}

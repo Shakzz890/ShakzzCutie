@@ -1,0 +1,85 @@
+[
+  {
+    "iconUrl": "https://github.com/Shakzz890/cutie/raw/refs/heads/master/GDIndex/icon.ico",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Shakzz890/cutie",
+    "fileSize": 15937,
+    "status": 1,
+    "language": "en",
+    "authors": [
+      "Horis"
+    ],
+    "tvTypes": [
+      "Movie",
+      "TvSeries"
+    ],
+    "version": 4,
+    "internalName": "GDIndex",
+    "url": "https://raw.githubusercontent.com/Shakzz890/cutie/builds/GDIndex.cs3",
+    "name": "GDIndex"
+  },
+  {
+    "iconUrl": "https://github.com/Shakzz890/cutie/raw/refs/heads/master/MoviesDrive/icon.png",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Shakzz890/cutie",
+    "fileSize": 25075,
+    "status": 1,
+    "language": "hi",
+    "authors": [
+      "megix"
+    ],
+    "tvTypes": [
+      "TvSeries",
+      "Movie",
+      "AsianDrama",
+      "Anime"
+    ],
+    "version": 22,
+    "internalName": "MoviesDrive",
+    "description": "High Quality Movies and TV Shows",
+    "url": "https://raw.githubusercontent.com/Shakzz890/cutie/builds/MoviesDrive.cs3",
+    "name": "MoviesDrive"
+  },
+  {
+    "iconUrl": "https://github.com/Shakzz890/cutie/raw/refs/heads/master/Moviesmod/icon.png",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Shakzz890/cutie",
+    "fileSize": 28569,
+    "status": 1,
+    "authors": [
+      "megix"
+    ],
+    "tvTypes": [
+      "TvSeries",
+      "Movie",
+      "AsianDrama",
+      "Anime"
+    ],
+    "version": 27,
+    "internalName": "Moviesmod",
+    "description": "Includes Topmovies",
+    "url": "https://raw.githubusercontent.com/Shakzz890/cutie/builds/Moviesmod.cs3",
+    "name": "Moviesmod"
+  },
+  {
+    "iconUrl": "https://github.com/Shakzz890/cutie/raw/refs/heads/master/NetflixMirrorProvider/icon.png",
+    "apiVersion": 1,
+    "repositoryUrl": "https://github.com/Shakzz890/cutie",
+    "fileSize": 45121,
+    "status": 1,
+    "authors": [
+      "megix"
+    ],
+    "tvTypes": [
+      "Movie",
+      "TvSeries",
+      "AsianDrama",
+      "Anime"
+    ],
+    "version": 29,
+    "internalName": "NetflixMirrorProvider",
+    "description": "Netflix, PrimeVideo, JioHotstar(Hotstar, Disney, Paramount, HBO, Peacock) Content in Multiple Languages",
+    "url": "https://raw.githubusercontent.com/Shakzz890/cutie/builds/NetflixMirrorProvider.cs3",
+    "name": "NetflixMirrorProvider"
+  }
+]
