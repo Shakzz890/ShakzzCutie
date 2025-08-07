@@ -18,6 +18,52 @@
     "url": "https://raw.githubusercontent.com/Shakzz890/ShakzzCutie/builds/GDIndex.cs3",
     "name": "GDIndex"
   },
+ {
+        "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://animexin.top&size=%size%",
+        "jarFileSize": 55663,
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/Shakzz890/ShakzzCutie",
+        "fileSize": 13883,
+        "status": 1,
+        "language": "en",
+        "authors": [
+            "shakzz"
+        ],
+        "tvTypes": [
+            "AnimeMovie",
+            "Anime",
+            "Cartoon"
+        ],
+        "version": 7,
+        "internalName": "Animexin",
+        "jarUrl": "https://raw.githubusercontent.com/Shakzz890/ShakzzCutie/builds/Animexin.jar",
+        "description": "Anime and Movies",
+        "url": "https://raw.githubusercontent.com/Shakzz890/ShakzzCutie/builds/Animexin.cs3",
+        "name": "Animexin"
+    },
+      {
+        "iconUrl": "https://animeyy.com/upload/logos/2024/03/logo_1710148637_65eecc1d2584c.png",
+        "jarFileSize": 77360,
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/Shakzz890/ShakzzCutie",
+        "fileSize": 18695,
+        "status": 1,
+        "language": "en",
+        "authors": [
+            "shakzz"
+        ],
+        "tvTypes": [
+            "Movie",
+            "Anime",
+            "AnimeMovie"
+        ],
+        "version": 7,
+        "internalName": "Animez",
+        "jarUrl": "https://raw.githubusercontent.com/Shakzz890/ShakzzCutie/builds/Animez.jar",
+        "description": "Animez Animes",
+        "url": "https://raw.githubusercontent.com/Shakzz890/ShakzzCutie/builds/Animez.cs3",
+        "name": "Animez"
+    },
   {
     "iconUrl": "https://github.com/Shakzz890/ShakzzCutie/blob/masters/Moviesmod/icon.png",
     "apiVersion": 1,
