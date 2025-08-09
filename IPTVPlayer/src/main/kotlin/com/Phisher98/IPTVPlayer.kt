@@ -13,7 +13,7 @@ import java.io.InputStream
 import java.util.UUID
 
 class IPTVPlayer : MainAPI() {
-    override var lang = "hi"
+    override var lang = "fil"
     override var mainUrl = "https://raw.githubusercontent.com/Cutie05-ui/Basta-secret/refs/heads/main/playlist.m3u"
     override var name = "IPTV Player"
     override val hasMainPage = true
