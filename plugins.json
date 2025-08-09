@@ -3,7 +3,7 @@
         "iconUrl": "https://raw.githubusercontent.com/phisher98/TVVVV/refs/heads/main/Icons/IPTV.png",
         "jarFileSize": 73061,
         "apiVersion": 1,
-        "repositoryUrl": "https://github.com/phisher98/cloudstream-extensions-phisher",
+        "repositoryUrl": "https://github.com/Shakzz890/ShakzzCutie",
         "fileSize": 17976,
         "status": 1,
         "language": "fil",
@@ -15,9 +15,9 @@
         ],
         "version": 6,
         "internalName": "IPTVPlayer",
-        "jarUrl": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/IPTVPlayer.jar",
+        "jarUrl": "https://raw.githubusercontent.com/Shakzz890/ShakzzCutie/builds/IPTVPlayer.jar",
         "description": "IPTV Player",
-        "url": "https://raw.githubusercontent.com/phisher98/cloudstream-extensions-phisher/builds/IPTVPlayer.cs3",
+        "url": "https://raw.githubusercontent.com/Shakzz890/ShakzzCutie/builds/IPTVPlayer.cs3",
         "name": "IPTVPlayer"
     },
   {
