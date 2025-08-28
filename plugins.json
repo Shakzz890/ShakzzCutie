@@ -1,4 +1,44 @@
 [
+{
+        "iconUrl": "https://github.com/Shakzz890/ShakzzCutie/raw/refs/heads/master/MovieBoxProvider/icon.png",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/Shakzz890/ShakzzCutie",
+        "fileSize": 43626,
+        "status": 1,
+        "language": "ta",
+        "authors": [
+            "Shakzz"
+        ],
+        "tvTypes": [
+            "Movie",
+            "TvSeries"
+        ],
+        "version": 9,
+        "internalName": ",Provider",
+        "description": "Multi Language Movies and Series Provider",
+        "url": "https://raw.githubusercontent.com/Shakzz890/ShakzzCutie/builds/MovieBoxProvider.cs3",
+        "name": "MovieBoxProvider"
+    },
+    {
+        "iconUrl": "https://github.com/Shakzz890/ShakzzCutie/raw/refs/heads/master/MovieBoxProvider/icon.png",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/Shakzz890/ShakzzCutie",
+        "fileSize": 44544,
+        "status": 1,
+        "language": "ta",
+        "authors": [
+            "Shakzz"
+        ],
+        "tvTypes": [
+            "Movie",
+            "TvSeries"
+        ],
+        "version": 2,
+        "internalName": "MovieBoxProviderIN",
+        "description": "Multi Language Movies and Series Provider (IN)",
+        "url": "https://raw.githubusercontent.com/Shakzz890/ShakzzCutie/builds/MovieBoxProviderIN.cs3",
+        "name": "MovieBoxProviderIN"
+    },
  {
         "iconUrl": "https://static1.colliderimages.com/wordpress/wp-content/uploads/2025/05/solo-leveling-jin-woo.jpg",
         "jarFileSize": 73061,
