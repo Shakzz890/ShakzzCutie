@@ -1,12 +1,11 @@
-// use an integer for version numbers
-version = 30
+version = 67
 
 cloudstream {
     //language = "en"
     // All of these properties are optional, you can safely remove them
 
-    description = "Netflix, PrimeVideo, JioHotstar(Hotstar, Disney, Paramount, HBO, Peacock) Content in Multiple Languages"
-    authors = listOf("megix")
+    description = "Must Install(For other extensions to work properly)"
+     authors = listOf("Shakzz")
 
     /**
      * Status int as the following:
@@ -17,11 +16,11 @@ cloudstream {
      * */
     status = 1 // will be 3 if unspecified
     tvTypes = listOf(
-        "Movie",
         "TvSeries",
+        "Movie",
         "AsianDrama",
         "Anime"
     )
 
-    iconUrl = "https://github.com/SaurabhKaperwan/CSX/raw/refs/heads/master/NetflixMirrorProvider/icon.png"
+    iconUrl = "https://github.com/SaurabhKaperwan/CSX/raw/refs/heads/master/Extractors/icon.png"
 }
