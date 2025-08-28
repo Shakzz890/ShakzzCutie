@@ -8,7 +8,7 @@ android {
 }
 
 cloudstream {
-    language = "fil"
+    language = "en"
     // All of these properties are optional, you can safely remove them
 
     description = "Multi Language Movies and Series Provider (PH)"
@@ -27,5 +27,5 @@ cloudstream {
         "TvSeries"
     )
 
-    iconUrl = "https://github.com/Shakzz890/ShakzzCutie/raw/refs/heads/master/MovieBoxProvider/icon.png"
+    iconUrl = "https://github.com/Shakzz890/ShakzzCutie/blob/masters/MovieBoxProviderIN/icon.png"
 }
