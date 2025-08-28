@@ -1,4 +1,47 @@
 [
+ {
+        "iconUrl": "https://github.com/Shakzz890/ShakzzCutie/raw/refs/heads/master/CineStream/icon.jpg",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/Shakzz890/ShakzzCutie",
+        "fileSize": 309690,
+        "status": 1,
+        "authors": [
+            "megix"
+        ],
+        "tvTypes": [
+            "TvSeries",
+            "Movie",
+            "AsianDrama",
+            "Anime",
+            "Torrent"
+        ],
+        "version": 202,
+        "internalName": "CineStream",
+        "description": "One stop solution for Movies, Series, Anime, AsianDrama and Torrents",
+        "url": "https://raw.githubusercontent.com/Shakzz890/ShakzzCutie/builds/CineStream.cs3",
+        "name": "CineStream"
+    },
+ {
+        "iconUrl": "https://github.com/Shakzz890/ShakzzCutie/raw/refs/heads/master/Extractors/icon.png",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/Shakzz890/ShakzzCutie",
+        "fileSize": 39206,
+        "status": 1,
+        "authors": [
+            "megix"
+        ],
+        "tvTypes": [
+            "TvSeries",
+            "Movie",
+            "AsianDrama",
+            "Anime"
+        ],
+        "version": 67,
+        "internalName": "Extractors",
+        "description": "Must Install(For other extensions to work properly)",
+        "url": "https://raw.githubusercontent.com/Shakzz890/ShakzzCutie/builds/Extractors.cs3",
+        "name": "Extractors"
+    },
 {
         "iconUrl": "https://github.com/Shakzz890/ShakzzCutie/blob/masters/MovieBoxProvider/icon.png",
         "apiVersion": 1,
