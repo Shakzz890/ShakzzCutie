@@ -18,7 +18,7 @@ class MovieBoxProvider : MainAPI() {
     override var mainUrl = "https://api.inmoviebox.com"
     override var name = "MovieBox"
     override val hasMainPage = true
-    override var lang = "fil"
+    override var lang = "en"
     override val supportedTypes = setOf(TvType.Movie, TvType.TvSeries)
 
     private val secretKeyDefault = BuildConfig.MOVIEBOX_SECRET_KEY_DEFAULT
