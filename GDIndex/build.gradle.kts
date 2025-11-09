@@ -1,12 +1,12 @@
 // use an integer for version numbers
-version = 4
+version = 6
 
 cloudstream {
     language = "en"
     // All of these properties are optional, you can safely remove them
 
-     description = "沙克兹"
-    authors = listOf("Horis")
+//    description = "Lorem Ipsum"
+    authors = listOf("shakzz")
 
     /**
      * Status int as the following:
@@ -21,6 +21,6 @@ cloudstream {
         "TvSeries",
     )
 
-    iconUrl = "https://raw.githubusercontent.com/Shakzz890/ShakzzCutie/masters/GDIndex/icon.ico"
+    iconUrl = "https://github.com/SaurabhKaperwan/CSX/raw/refs/heads/master/GDIndex/icon.ico"
 
 }

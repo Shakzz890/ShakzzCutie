@@ -1,6 +1,6 @@
 import org.jetbrains.kotlin.konan.properties.Properties
 
-version = 202
+version = 246
 
 android {
     defaultConfig {
@@ -9,13 +9,14 @@ android {
         android.buildFeatures.buildConfig=true
         buildConfigField("String", "CONSUMET_API", "\"${properties.getProperty("CONSUMET_API")}\"")
         buildConfigField("String", "SIMKL_API", "\"${properties.getProperty("SIMKL_API")}\"")
+        buildConfigField("String", "TMDB_KEY", "\"${properties.getProperty("TMDB_KEY")}\"")
     }
 }
 
 cloudstream {
     // language = "en"
     description = "One stop solution for Movies, Series, Anime, AsianDrama and Torrents"
-    authors = listOf("Shakzz")
+    authors = listOf("shakzz")
     status = 1
     tvTypes = listOf(
         "TvSeries",

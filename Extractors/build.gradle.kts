@@ -1,11 +1,11 @@
-version = 67
+version = 75
 
 cloudstream {
-    //language = "en"
+    //language = "hi"
     // All of these properties are optional, you can safely remove them
 
     description = "Must Install(For other extensions to work properly)"
-     authors = listOf("Shakzz")
+     authors = listOf("shakzz")
 
     /**
      * Status int as the following:
