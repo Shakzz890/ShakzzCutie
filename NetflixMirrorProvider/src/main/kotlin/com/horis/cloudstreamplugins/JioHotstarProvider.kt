@@ -26,27 +26,34 @@ class JioHotstarProvider : MainAPI() {
         TvType.AsianDrama
     )
     override var lang = "en"
-
-    override var mainUrl = "https://net2025.cc"
+    override var mainUrl = "https://net22.cc"
+    private var newUrl = "https://net52.cc"
     override var name = "JioHotstar"
-
     override val hasMainPage = true
-    private var cookie_value = ""
     private val headers = mapOf(
         "X-Requested-With" to "XMLHttpRequest"
     )
 
-    override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse? {
-        cookie_value = if(cookie_value.isEmpty()) bypass(mainUrl) else cookie_value
-        val cookies = mapOf(
+    companion object {
+        private var cookie_value: String = ""
+    }
+
+    private suspend fun getCookie(): Map<String, String> {
+        if (cookie_value.isEmpty()) {
+            cookie_value = bypass(newUrl)
+        }
+        return mapOf (
             "t_hash_t" to cookie_value,
             "ott" to "hs",
             "hd" to "on"
         )
+    }
+
+    override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse? {
         val document = app.get(
             "$mainUrl/mobile/home",
-            cookies = cookies,
-            referer = "$mainUrl/tv/home",
+            cookies = getCookie(),
+            referer = "$mainUrl/home",
         ).document
         val items = document.select(".tray-container, #top10").map {
             it.toHomePageList()
@@ -63,47 +70,32 @@ class JioHotstarProvider : MainAPI() {
     }
 
     private fun Element.toSearchResult(): SearchResponse? {
-        val id = selectFirst("a")?.attr("data-post") ?: attr("data-post") ?: return null
-        // val posterUrl =
-        //     fixUrlNull(selectFirst(".card-img-container img, .top10-img img")?.attr("data-src"))
-
+        val id = selectFirst("a")?.attr("data-post") ?: attr("data-post")
         return newAnimeSearchResponse("", Id(id).toJson()) {
-            this.posterUrl = "https://imgcdn.media/hs/v/$id.jpg"
-            posterHeaders = mapOf("Referer" to "$mainUrl/tv/home")
+            this.posterUrl = "https://imgcdn.kim/hs/v/$id.jpg"
+            posterHeaders = mapOf("Referer" to "$mainUrl/home")
         }
     }
 
     override suspend fun search(query: String): List<SearchResponse> {
-        cookie_value = if(cookie_value.isEmpty()) bypass(mainUrl) else cookie_value
-        val cookies = mapOf(
-            "t_hash_t" to cookie_value,
-            "hd" to "on",
-            "ott" to "hs"
-        )
         val url = "$mainUrl/mobile/hs/search.php?s=$query&t=${APIHolder.unixTime}"
-        val data = app.get(url, referer = "$mainUrl/tv/home", cookies = cookies).parsed<SearchData>()
+        val data = app.get(url, referer = "$mainUrl/home", cookies = getCookie()).parsed<SearchData>()
 
         return data.searchResult.map {
             newAnimeSearchResponse(it.t, Id(it.id).toJson()) {
-                posterUrl = "https://imgcdn.media/hs/v/${it.id}.jpg"
-                posterHeaders = mapOf("Referer" to "$mainUrl/tv/home")
+                posterUrl = "https://imgcdn.kim/hs/v/${it.id}.jpg"
+                posterHeaders = mapOf("Referer" to "$mainUrl/home")
             }
         }
     }
 
     override suspend fun load(url: String): LoadResponse? {
-        cookie_value = if(cookie_value.isEmpty()) bypass(mainUrl) else cookie_value
         val id = parseJson<Id>(url).id
-        val cookies = mapOf(
-            "t_hash_t" to cookie_value,
-            "hd" to "on",
-            "ott" to "hs"
-        )
         val data = app.get(
             "$mainUrl/mobile/hs/post.php?id=$id&t=${APIHolder.unixTime}",
             headers,
-            referer = "$mainUrl/tv/home",
-            cookies = cookies
+            referer = "$mainUrl/home",
+            cookies = getCookie()
         ).parsed<PostData>()
 
         val episodes = arrayListOf<Episode>()
@@ -119,13 +111,13 @@ class JioHotstarProvider : MainAPI() {
             ?.map { it.trim() }
             ?.filter { it.isNotEmpty() }
 
-        val rating = data.match?.replace("IMDb ", "")?.toRatingInt()
+        val rating = data.match?.replace("IMDb ", "")
         val runTime = convertRuntimeToMinutes(data.runtime.toString())
 
         val suggest = data.suggest?.map {
             newAnimeSearchResponse("", Id(it.id).toJson()) {
-                this.posterUrl = "https://imgcdn.media/hs/v/${it.id}.jpg"
-                posterHeaders = mapOf("Referer" to "$mainUrl/tv/home")
+                this.posterUrl = "https://imgcdn.kim/hs/v/${it.id}.jpg"
+                posterHeaders = mapOf("Referer" to "$mainUrl/home")
             }
         }
 
@@ -139,7 +131,7 @@ class JioHotstarProvider : MainAPI() {
                     this.name = it.t
                     this.episode = it.ep.replace("E", "").toIntOrNull()
                     this.season = it.s.replace("S", "").toIntOrNull()
-                    this.posterUrl = "https://imgcdn.media/hsepimg/150/${it.id}.jpg"
+                    this.posterUrl = "https://imgcdn.kim/hsepimg/150/${it.id}.jpg"
                     this.runTime = it.time.replace("m", "").toIntOrNull()
                 }
             }
@@ -156,14 +148,14 @@ class JioHotstarProvider : MainAPI() {
         val type = if (data.episodes.first() == null) TvType.Movie else TvType.TvSeries
 
         return newTvSeriesLoadResponse(title, url, type, episodes) {
-            posterUrl = "https://imgcdn.media/hs/v/$id.jpg"
-            backgroundPosterUrl = "https://imgcdn.media/hs/h/$id.jpg"
-            posterHeaders = mapOf("Referer" to "$mainUrl/tv/home")
+            posterUrl = "https://imgcdn.kim/hs/v/$id.jpg"
+            backgroundPosterUrl = "https://imgcdn.kim/hs/h/$id.jpg"
+            posterHeaders = mapOf("Referer" to "$mainUrl/home")
             plot = data.desc
             year = data.year.toIntOrNull()
             tags = genre
             actors = cast
-            this.rating = rating
+            this.score =  Score.from10(rating)
             this.duration = runTime
             this.contentRating = data.ua
             this.recommendations = suggest
@@ -175,7 +167,7 @@ class JioHotstarProvider : MainAPI() {
     ): List<Episode> {
         val episodes = arrayListOf<Episode>()
         val cookies = mapOf(
-            "t_hash_t" to cookie_value,
+            "t_hash_t" to getCookie(),
             "hd" to "on",
             "ott" to "hs"
         )
@@ -184,15 +176,15 @@ class JioHotstarProvider : MainAPI() {
             val data = app.get(
                 "$mainUrl/mobile/hs/episodes.php?s=$sid&series=$eid&t=${APIHolder.unixTime}&page=$pg",
                 headers,
-                referer = "$mainUrl/tv/home",
-                cookies = cookies
+                referer = "$mainUrl/home",
+                cookies = getCookie()
             ).parsed<EpisodesData>()
             data.episodes?.mapTo(episodes) {
                 newEpisode(LoadData(title, it.id)) {
                     name = it.t
                     episode = it.ep.replace("E", "").toIntOrNull()
                     season = it.s.replace("S", "").toIntOrNull()
-                    this.posterUrl = "https://imgcdn.media/hsepimg/${it.id}.jpg"
+                    this.posterUrl = "https://imgcdn.kim/hsepimg/${it.id}.jpg"
                     this.runTime = it.time.replace("m", "").toIntOrNull()
                 }
             }
@@ -209,16 +201,11 @@ class JioHotstarProvider : MainAPI() {
         callback: (ExtractorLink) -> Unit
     ): Boolean {
         val (title, id) = parseJson<LoadData>(data)
-        val cookies = mapOf(
-            "t_hash_t" to cookie_value,
-            "hd" to "on",
-            "ott" to "hs"
-        )
         val playlist = app.get(
-            "$mainUrl/mobile/hs/playlist.php?id=$id&t=$title&tm=${APIHolder.unixTime}",
+            "$newUrl/mobile/hs/playlist.php?id=$id&t=$title&tm=${APIHolder.unixTime}",
             headers,
-            referer = "$mainUrl/tv/home",
-            cookies = cookies
+            referer = "$mainUrl/",
+            cookies = getCookie()
         ).parsed<PlayList>()
 
         playlist.forEach { item ->
@@ -227,21 +214,25 @@ class JioHotstarProvider : MainAPI() {
                     newExtractorLink(
                         name,
                         it.label,
-                        fixUrl(it.file),
+                        "$newUrl/${it.file}",
                         type = ExtractorLinkType.M3U8
                     ) {
-                        this.referer = "$mainUrl/tv/home"
-                        this.quality = getQualityFromName(it.file.substringAfter("q=", ""))
+                        this.referer = "$newUrl/"
+                        this.quality = getQualityFromName(it.file.substringAfter("q=", "").substringBefore("&in"))
                     }
                 )
             }
 
             item.tracks?.filter { it.kind == "captions" }?.map { track ->
                 subtitleCallback.invoke(
-                    SubtitleFile(
+                    newSubtitleFile(
                         track.label.toString(),
-                        httpsify(track.file.toString())
-                    )
+                        httpsify(track.file.toString().replace("\\", "")),
+                    ) {
+                        this.headers = mapOf(
+                            "Referer" to "$newUrl/"
+                        )
+                    }
                 )
             }
         }
