@@ -1,5 +1,5 @@
 // use an integer for version numbers
-version = 9
+version = 18
 
 android {
     buildFeatures {
@@ -8,11 +8,11 @@ android {
 }
 
 cloudstream {
-    language = "en"
+    language = "hi"
     // All of these properties are optional, you can safely remove them
 
     description = "Multi Language Movies and Series Provider"
-    authors = listOf("Shakzz")
+    authors = listOf("NivinCNC,Phisher98")
 
     /**
      * Status int as the following:
@@ -27,5 +27,8 @@ cloudstream {
         "TvSeries"
     )
 
-    iconUrl = "https://github.com/Shakzz890/ShakzzCutie/blob/masters/MovieBoxProvider/icon.png"
+    iconUrl = "https://github.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/raw/refs/heads/master/MovieBoxProvider/icon.png"
+
+    requiresResources = true
+    isCrossPlatform = false
 }
