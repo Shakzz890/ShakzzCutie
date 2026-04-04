@@ -1,4 +1,23 @@
 [
+  {
+        "iconUrl": "https://www.google.com/s2/favicons?domain=aniwatchtv.to&sz=%size%",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/Shakzz890/ShakzzCutie",
+        "fileSize": 44420,
+        "status": 1,
+        "language": "en",
+        "authors": [
+            "Shakzz"
+        ],
+        "tvTypes": [
+            "Anime",
+            "OVA"
+        ],
+        "version": 3,
+        "internalName": "AniWatch",
+        "url": "https://raw.githubusercontent.com/Shakzz890/ShakzzCutie/builds/AniWatch.cs3",
+        "name": "AniWatch"
+    },
  {
         "iconUrl": "https://github.com/Shakzz890/ShakzzCutie/raw/refs/heads/master/CineStream/icon.jpg",
         "apiVersion": 1,
