@@ -21,8 +21,8 @@ object StarPopupHelper {
     private const val TAG = "StarPopupHelper"
     private const val PREFS_NAME = "ShakzzVerseGlobalPrefs"
     private const val KEY_SHOWN_STAR_POPUP = "shown_star_popup_global_pay"
-    private const val GITHUB_REPO_URL = "https://github.com/NivinShakzz/ShakzzVerse-Cloud-Stream-Extension"
-    private const val SPONSOR_URL = "https://www.paywithchai.in/nivinShakzz"
+    private const val GITHUB_REPO_URL = "https://github.com/NivinShakzz/ShakzzCutie"
+    private const val SPONSOR_URL = ""
     
     fun showStarPopupIfNeeded(context: Context) {
         val prefs = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
