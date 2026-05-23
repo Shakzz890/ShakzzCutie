@@ -1,0 +1,9 @@
+{
+  "name": "Shakzz All Language",
+  "iconUrl": "https://hobiverse.com.vn/cdn/shop/articles/solo-leveling-sung-jinwoo-la-nhan-vat-chinh-xuat-sac_cdb8f14b-af89-47ae-aea3-dd254c701cc2.jpg?v=1749025994",
+  "description": "All Language Contents",
+  "manifestVersion": 1,
+  "pluginLists": [
+    "https://raw.githubusercontent.com/Shakzz890/ShakzzCutie/refs/heads/builds/plugins.json"
+  ]
+}
