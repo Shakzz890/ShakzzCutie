@@ -1,4 +1,25 @@
 [
+ {
+        "iconUrl": "https://hobiverse.com.vn/cdn/shop/articles/solo-leveling-sung-jinwoo-la-nhan-vat-chinh-xuat-sac_cdb8f14b-af89-47ae-aea3-dd254c701cc2.jpg?v=1749025994",
+        "fileHash": "sha256-af922c93e7be615f2c4323a2653f5fae9f986a31e0488230b7e8062bbe4bb07e",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/Shakzz890/ShakzzCutie",
+        "fileSize": 72309,
+        "status": 1,
+        "language": "en",
+        "authors": [
+            "Shakzz"
+        ],
+        "tvTypes": [
+            "Movie",
+            "TvSeries"
+        ],
+        "version": 62,
+        "internalName": "Shakzz",
+        "description": "Netflix, PrimeVideo, Disney+ Hotstar Contents in Multiple Languages",
+        "url": "https://raw.githubusercontent.com/Shakzz890/ShakzzCutie/builds/Shakzz Verse.cs3",
+        "name": "Shakzz"
+    },
   {
         "iconUrl": "https://www.google.com/s2/favicons?domain=aniwatchtv.to&sz=%size%",
         "apiVersion": 1,
